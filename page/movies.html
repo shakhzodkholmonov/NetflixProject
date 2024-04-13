@@ -30,8 +30,7 @@
 
 <body class="">
 	<div class="flex">
-		<div style="background-image: linear-gradient(to right, rgb(16, 15, 15) 5%, rgba(0, 0, 0, 0) 90%), url(&quot;https://image.tmdb.org/t/p/original/sfKIRZ7jjOYZXMlg1waEkFrZrNN.jpg&quot;);"
-			class="banner bg-no-repeat w-full h-[700px]">
+		<div class="banner bg-no-repeat w-full h-[700px]">
 			<header class="sticky h-[60px]  w-[100%] top-0 left-0 bg-transparent">
 				<div class="justify-between flex">
 					<div class="left-header flex">
@@ -48,11 +47,16 @@
 						</div>
 					</div>
 					<div class="right-header mr-9 mt-2 flex">
-						<form id="searchForm">
+						<form class="z-50 flex gap-2" id="searchForm">
 							<div class="flex gap-2">
 								<input class="w-[220px] h-[40px] bg-transparent text-white placeholder:text-white"
 									type="text" id="searchInput" placeholder="Enter movie title...">
 							</div>
+							<button class="w-[55px] h-[40px] rounded-[5px] bg-orange-200 hover:bg-orange-300">
+								<lord-icon class="pt-[2.5px]" src="https://cdn.lordicon.com/vyqvtrtg.json"
+									trigger="hover" style="width:25px;height:25px">
+								</lord-icon>
+							</button>
 							<div id="searchResults"></div>
 						</form>
 					</div>
@@ -112,5 +116,6 @@
 	</div>
 </body>
 <script src="/scripts/search.js"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
 
 </html>
