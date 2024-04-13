@@ -1263,3 +1263,32 @@ svg.close-btn.active {
   color: #ffffff;
   padding: 0 10px 10px;
 }
+
+.menu__link {
+  color: #ffffffb6;
+  line-height: 2;
+  position: relative;
+}
+
+.menu__link:hover {
+  color: #fff;
+}
+
+.menu__link::before {
+  content: '';
+  width: 0;
+  height: 4px;
+  background-color: rgb(128, 0, 0);
+  position: absolute;
+  bottom: -.75rem;
+  left: 0;
+  transition: width .4s;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+}
+
+.menu__link.active::before {
+  width: 100%;
+}

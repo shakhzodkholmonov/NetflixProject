@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<title>Netflix</title>
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -35,30 +35,30 @@
 				<div class="justify-between flex">
 					<div class="left-header flex">
 						<div class="logo">
-							<a href="/home.html">
-								<img class="h-11 pt-4 pl-9 " src="/image/image.png" alt="" fill="red">
+							<a href="../home.html">
+								<img class="h-11 pt-4 pl-9 " src="../image/image.png" alt="" fill="red">
 							</a>
 						</div>
 						<div class="mt-4 ml-10 text-white">
-							<a href="/page/index.html">Home</a>
-							<a class="ml-5" href="/page/series.html">Series</a>
-							<a class="ml-5" href="/page/movies.html">Movies</a>
-							<a class="ml-5" href="/page/list.html">My List</a>
+							<a class="menu__link active" href="../page/index.html">Home</a>
+							<a class="ml-5 menu__link" href="../page/series.html">Series</a>
+							<a class="ml-5 menu__link" href="../page/movies.html">Movies</a>
+							<a class="ml-5 menu__link" href="../page/list.html">My List</a>
 						</div>
 					</div>
-					<div class="right-header mr-9 mt-2 flex">
-						<form class="z-50 flex gap-2" id="searchForm">
+					<div class="right-header mr-9 mt-2 flex gap-2">
+						<form class="z-50" id="searchForm">
 							<div class="flex gap-2">
 								<input class="w-[220px] h-[40px] bg-transparent text-white placeholder:text-white"
 									type="text" id="searchInput" placeholder="Enter movie title...">
 							</div>
-							<button class="w-[55px] h-[40px] rounded-[5px] bg-orange-200 hover:bg-orange-300">
-								<lord-icon class="pt-[2.5px]" src="https://cdn.lordicon.com/vyqvtrtg.json"
-									trigger="hover" style="width:25px;height:25px">
-								</lord-icon>
-							</button>
 							<div id="searchResults"></div>
 						</form>
+						<button class="mt-[10px] w-[55px] h-[40px] rounded-[5px] bg-orange-200 hover:bg-orange-300">
+							<lord-icon class="pt-[2.5px]" src="https://cdn.lordicon.com/vyqvtrtg.json" trigger="hover"
+								style="width:25px;height:25px">
+							</lord-icon>
+						</button>
 					</div>
 				</div>
 			</header>
@@ -115,7 +115,7 @@
 		</iframe>
 	</div>
 </body>
-<script src="/scripts/search.js"></script>
+<script src="../scripts/search.js"></script>
 <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
 </html>
